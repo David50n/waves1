@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Waves</title>
+</head>
+<body>
+    <div class="main__container">
+        <div class="container">
+            <div class="wave_container">
+                <div class="wave_up_down_container">
+                    <input id="wave_up" name="wave_down_up_arrows" type="radio" class="button_wave_up">
+                    <label width="30" height="30" for="wave_up"><svg width="30" height="30" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m16.843 13.789c.108.141.157.3.157.456 0 .389-.306.755-.749.755h-8.501c-.445 0-.75-.367-.75-.755 0-.157.05-.316.159-.457 1.203-1.554 3.252-4.199 4.258-5.498.142-.184.36-.29.592-.29.23 0 .449.107.591.291 1.002 1.299 3.044 3.945 4.243 5.498z"/>
+                    </svg>
+                </label>
+                    <input id="wave_down" name="wave_down_up_arrows" type="radio" class="button_wave_down">
+                    <label for="wave_down"><svg width="30" height="30" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="m16.843 10.211c.108-.141.157-.3.157-.456 0-.389-.306-.755-.749-.755h-8.501c-.445 0-.75.367-.75.755 0 .157.05.316.159.457 1.203 1.554 3.252 4.199 4.258 5.498.142.184.36.29.592.29.23 0 .449-.107.591-.291 1.002-1.299 3.044-3.945 4.243-5.498z"/>
+                    </svg>
+                </label>
+                </div>
+                    <div class="wave_color_container">
+                        <input id="choose_wave_color" name="color" type="color" class="wave_color" list>
+                    </div>
+                <div class="opacity_container">
+                    <div class="opacity_smaller_container">
+                        <input id="wave_opacity" name="opacity_percents" type="number" class="choose_opacity" min="0" max="100" placeholder="0">
+                        <div style="pointer-events: none" name="opacity_percents" class="percent">
+                            <div class="just_percent">%</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wave_range">
+                        <input id="" type="range" min="0" max="100" onchange="rangevalue.value=value" />
+                </div>
+                <div class="Random">
+                    <button class="Button_Random">
+                        <svg width="20px" height="20px" viewBox="0 0 16 16" class="bi bi-dice-5" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M13 1H3a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2zM3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3z"/>
+                            <circle cx="4" cy="4" r="1.5"/>
+                            <circle cx="12" cy="4" r="1.5"/>
+                            <circle cx="12" cy="12" r="1.5"/>
+                            <circle cx="4" cy="12" r="1.5"/>
+                            <circle cx="8" cy="8" r="1.5"/>
+                          </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
